@@ -13,6 +13,7 @@ function Posts() {
         const data = await fetch("https://blog-api-122.herokuapp.com/");
         
         const allPosts = await data.json();
+
         setPosts(allPosts.posts);
     }
     return (
