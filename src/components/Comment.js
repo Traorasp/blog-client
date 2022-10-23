@@ -25,7 +25,7 @@ function Comment(props) {
     }
 
     return (
-        <div>
+        <div class='comment'>
             <h4>Posted: {date}</h4>
             <p>{props.comment.comment}</p>
         </div>

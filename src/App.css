@@ -1,7 +1,118 @@
+body {
+  background-color: rgb(222, 222, 222);
+}
+
 .App {
   text-align: center;
 }
 
-.hide {
-  display: none;
+.back {
+  background-color: rgb(109, 109, 109);
+  color: rgb(223, 222, 222);
+  padding: 2vh 1vw 2vh 3vw;
+  margin: 0;
+  font-size: 2em;
+}
+
+.back:hover {
+  font-weight: 900;
+  text-decoration: underline;
+  color: white;
+}
+
+.background {
+  padding: 1vh 1vw 1vh 3vw;
+}
+
+#home-title {
+  font-size: 3em;
+  text-align: center;
+  background-color: rgb(109, 109, 109);
+  color: white;
+  margin-top: 0px;
+  padding: 2vh 0 2vh 0;
+}
+
+#about {
+  font-size: 2.5em;
+}
+
+#link-post {
+  font-size: 1.6em;
+  padding: 10px;
+  background-color: white;
+  border: 0.25vw solid rgb(109, 109, 109);
+}
+
+#link-post:hover {
+  background-color: rgb(109, 109, 109);
+  border: 0.25vw solid black;
+  color: white;
+}
+
+.text {
+  font-size: 1.4em;
+  margin: 0px;
+}
+
+.title {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.date {
+  text-align: center;
+  font-size: 1em;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.post-info {
+  background-color: rgb(169, 169, 169);
+  border: 0.3vw solid rgb(109, 109, 109);
+  padding: 0px 2vw 0px 2vw;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+  color: black;
+}
+
+.post-info h3, h4{
+  margin: 10px 0 10px;
+  font-size: 24px;
+}
+
+.post-info:hover{
+  box-shadow: 0vw 0.1vh 0.5vh black;
+  border: 0.35vw solid rgb(109, 109, 109);
+  background-color: rgb(188, 188, 188);
+}
+
+.comment p{
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.comment h4 {
+  font-size: 1.2em;
+}
+
+#Comment-Form label, button {
+  font-size: 1.3em;
+}
+
+#Comment-Input {
+  font-size: 1em;
+  width: 40%;
+}
+
+#comment-section h3{
+  font-size: 1.6em;
+  margin-bottom: 0.8vh;  
+}
+
+.comment-btn:hover{
+  background-color: rgb(188, 188, 188);
 }

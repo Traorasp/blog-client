@@ -53,17 +53,20 @@ function Post() {
 
     return (
         <div>
-            <Link to="/posts"><h2>Back</h2></Link>
-            <h1>{post.title}</h1>
-            <h4>{date}</h4>
-            <p>{post.content}</p>
-            <div>
-                <h3>Comments</h3>
-                <button onClick={showForm}>Add Comment</button>
-                {form ? <CommentForm setComments={setComments} postID={`${id}`} /> : ""}
-                {comments.map(comment => {
-                    return <Comment key={`${comment._id}`} comment={comment} />
-                })}
+            <Link to="/posts"><h2 class='back'>Back</h2></Link>
+            <div class='background'>
+                <h1 class='title'>{post.title}</h1>
+                <h4 class='date'>{date}</h4>
+                <p class='text'>{post.content}</p>
+                <div id='comment-section'>
+                    <h3>Comments</h3>
+                    <button onClick={showForm} class='comment-btn'>Post Comment</button>
+                    {form ? <CommentForm setComments={setComments} postID={`${id}`} /> : ""}
+                    
+                    {comments.map(comment => {
+                        return <Comment key={`${comment._id}`} comment={comment} />
+                    })}
+                </div>
             </div>
         </div>
     );

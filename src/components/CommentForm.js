@@ -37,7 +37,7 @@ function CommentForm(props) {
             <form id='Comment-Form' onSubmit={sendForm} method="post">
                 <label htmlFor='Comment-Input'>Comment:</label>
                 <input type='text' id='Comment-Input' name='comment' minLength={1} value={comment} onChange={setForm} required></input>
-                <button type='submit' >Post</button>
+                <button type='submit' class='comment-btn'>Post</button>
             </form>
         </div>
     );

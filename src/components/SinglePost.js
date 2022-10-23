@@ -26,8 +26,8 @@ function SinglePost(props) {
     }
 
     return (
-        <div>
-            <Link to={`/posts/${props.post._id}`} >
+        <div class='text' >
+            <Link to={`/posts/${props.post._id}`} class='post-info'>
                 <h3>{props.post.title}</h3>
                 <h4>{date}</h4>
             </Link>
